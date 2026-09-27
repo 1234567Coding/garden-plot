@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- MEDIVAVINE/JOURNEY: paste ad network script here -->
+  <title>The Garden Plot — Grow More in the Ground You've Got</title>
+  <meta name="description" content="The Garden Plot helps new homeowners grow real harvests in real ground — in-ground and raised-bed food gardening guides, soil-first advice, and season plans. Zone-aware, dirt-under-nails practical.">
+  <meta property="og:title" content="The Garden Plot — Grow More in the Ground You've Got">
+  <meta property="og:description" content="In-ground and raised-bed food gardening for people with actual yards: soil, compost, crop guides, and pest help — always with a plan.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://garden-plot.pages.dev/">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+  /* Set theme before first paint: stored choice, else OS preference. */
+  (function(){try{var t=localStorage.getItem('gardenplot-theme');if(!t){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+  </script>
+  <link rel="canonical" href="https://garden-plot.pages.dev/">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="The Garden Plot — home">
+      <svg class="brand-mark" viewBox="0 0 40 40" role="img" aria-label="A young seedling sprouting from garden soil">
+        <path d="M20 33V15" fill="none" stroke="#3d7c33" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M20 21c-5.5 0-10-4-11-9.5 5.5 0 10 4 11 9.5z" fill="#3d7c33" opacity="0.35"/>
+        <path d="M20 17c5.5 0 10-4 11-9.5-5.5 0-10 4-11 9.5z" fill="#3d7c33"/>
+        <path d="M7 33h26" fill="none" stroke="#3d7c33" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="12.5" cy="33" r="1.7" fill="#3d7c33" opacity="0.5"/>
+        <circle cx="27.5" cy="33" r="1.7" fill="#3d7c33" opacity="0.5"/>
+      </svg>
+      <span class="brand-name">The Garden Plot<span class="brand-tag">Grow more in the ground you've got.</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path d="M4 7h16M4 12h16M4 17h16"/>
+      </svg>
+    </button>
+    <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="#articles">Start Here</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="disclosure.html">Disclosure</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="site-search" data-search>
+        <label class="visually-hidden" for="siteSearchInput">Search articles</label>
+        <input class="site-search-input" id="siteSearchInput" type="search" placeholder="Search articles&hellip;" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="siteSearchResults" aria-autocomplete="list">
+        <div class="site-search-results" id="siteSearchResults" role="listbox" aria-label="Search results" hidden></div>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">In-ground &amp; raised-bed food gardening</span>
+      <h1>The Garden Plot</h1>
+      <p class="tagline">Grow more in the ground you've got.</p>
+      <p class="pitch">Most garden advice assumes you either own a farm or a balcony planter. This site is for the rest of us: new homeowners with an actual yard who want real harvests from real soil. No Pinterest-perfect beds required — we cover soil, compost, planting, watering, and pests with a week-by-week plan you can actually follow. Always check your zone; ugly-but-productive gardens welcome here.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="articles-heading">
+    <div class="wrap">
+      <div class="section-head" id="articles">
+        <h2 id="articles-heading">Latest articles</h2>
+      </div>
+      <ul class="card-grid">
+      </ul>
+      <p class="articles-pending"><em>We're just getting started — the first growing guides are being written right now and new ones publish every day. Check back tomorrow for the beginner's complete plan, soil testing, composting, crop guides, and pest help.</em></p>
+    </div>
+  </section>
+
+  <section class="section band about" id="about" aria-labelledby="about-heading">
+    <div class="wrap">
+      <h2 id="about-heading">About The Garden Plot</h2>
+      <p>The Garden Plot is for homeowners with actual yards — in-ground beds and raised beds, rows and native soil, real harvests you can eat. If your last gardening attempt was a sad tomato pot, you're in the right place: every guide starts from the soil up and ends with a plan.</p>
+      <p>Our rules are simple. <strong>Feed the soil, not the plant.</strong> <strong>Always check your zone</strong> before trusting anyone's planting dates — timing advice here always tells you to. And <strong>celebrate the ugly-but-productive garden:</strong> a muddy bed full of tomatoes beats a styled bed full of nothing. If you're new, start with our beginner's complete plan (publishing first) and work outward from there.</p>
+      <p>Heads up: this is a yard-gardening site, not a container-gardening one. If all you have is a balcony, our sister approach would be small-space container growing — here, we're putting roots in the ground.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="newsletter-heading">
+    <div class="wrap">
+      <div class="newsletter-card">
+        <h2 id="newsletter-heading">The Weekend Plot</h2>
+        <p>One seasonal task for your garden, every Friday morning — timed to your zone band, doable in a weekend.</p>
+        <!-- NEWSLETTER: paste Beehiiv/Substack embed here -->
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">The Garden Plot</div>
+        <p class="footer-tag">Grow more in the ground you've got.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#articles">Start Here</a></li>
+          <li><a href="#articles">All articles</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      <div class="footer-note">
+        <h3>The fine print</h3>
+        <p>Some links on this site are affiliate links. If you buy through them, we may earn a commission at no extra cost to you — it's how the lights stay on.</p>
+        <p><a href="disclosure.html" class="footer-note-link">Read our full affiliate &amp; advertising disclosure →</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 The Garden Plot. All rights reserved.</span>
+      <span><a href="disclosure.html">Affiliate Disclosure</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
